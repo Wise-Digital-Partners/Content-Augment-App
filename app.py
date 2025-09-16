@@ -82,7 +82,7 @@ if st.button("✨ Augment Content"):
             # --- API Call ---
             with st.spinner("Augmenting your content... Please wait."):
                 genai.configure(api_key=api_key)
-                model = genai.GenerativeModel('gemini-2.5-pro-preview-05-20') # Or use 'gemini-pro'
+                model = genai.GenerativeModel('gemini-2.5-pro') # Or use 'gemini-pro'
 
                 # The detailed custom prompt
                 prompt = f"""
